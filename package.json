@@ -1,13 +1,9 @@
 {
-  "name": "prod_agent_demo",
-  "version": "0.1.0",
+  "name": "project",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "eval": "tsx evals/eval.ts"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "dependencies": {
     "@ai-sdk/openai": "^4.0.53",
